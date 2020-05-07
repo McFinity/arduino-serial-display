@@ -1,5 +1,6 @@
 {
     "sketch": "serial-command.ino",
     "board": "arduino:avr:uno",
-    "port": "COM5"
+    "port": "COM9",
+    "programmer": "AVRISP mkII"
 }

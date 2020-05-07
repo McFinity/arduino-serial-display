@@ -12,6 +12,7 @@ struct Command
     void initData (uint16_t expectedByteCount) {
         free(data);
         data = (int*) malloc(sizeof(int) * expectedByteCount);
+        //memset(data, 0, sizeof(int) * expectedByteCount);
         dataIndex = 0;
         lastIndex = expectedByteCount - 1;
         initialized = true;
@@ -31,5 +32,9 @@ struct Command
         if (message.bufferSize > 0) {
             commandCode = message.buffer[0];
         }
+    }
+    Command (int code) {
+        data = (int*) malloc(0);
+        commandCode = code;
     }
 };
