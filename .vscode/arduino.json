@@ -1,5 +1,5 @@
 {
-    "sketch": "serial-echo.ino",
+    "sketch": "serial-command.ino",
     "board": "arduino:avr:uno",
     "port": "COM5"
 }
